@@ -1,0 +1,31 @@
+.separator {
+  margin-bottom: 40px;
+}
+
+.group {
+  margin-bottom: 40px;
+}
+
+.groupHeading {
+  composes: ui16SemiBold from '../../styles/typeography.css';
+  margin-bottom: 20px;
+}
+
+.badge + .badge {
+  margin-left: 40px;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.columns .group + .group {
+  margin-left: 60px;
+}

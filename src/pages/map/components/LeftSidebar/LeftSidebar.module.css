@@ -1,0 +1,25 @@
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.submenu:last-child {
+  margin-bottom: 52px;
+}
+
+.addressAutocomplete {
+  /* display: block;
+  height: 300px;
+  background-color: aqua; */
+}
+
+.addressAutocompleteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  height: 188px;
+}

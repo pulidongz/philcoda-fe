@@ -1,0 +1,37 @@
+p {
+  margin-bottom: 0;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px;
+}
+
+.title,
+.value {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.value {
+  overflow: hidden;
+}
+
+.title {
+  composes: ui14SemiBold from '../../../../styles/typeography.css';
+  color: var(--colorBlack2);
+}
+
+.value {
+  composes: ui14Regular from '../../../../styles/typeography.css';
+  color: var(--colorGray8);
+}
+
+.noData {
+  margin: 8px;
+}

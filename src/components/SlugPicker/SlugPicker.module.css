@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.prefix {
+  z-index: 10;
+  padding: 6px 0 6px 12px;
+}
+
+.prefix.hasValue {
+  color: var(--colorGray6);
+}
+
+.input {
+  flex-grow: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

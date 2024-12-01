@@ -1,27 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Suspense, lazy } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+import FetchingPanel from '../src/components/FetchingPanel'
+import { MapLayerProvider } from '../src/contexts/MapLayerContext'
+
+import './styles/globals.css'
+import './styles/variables.css'
+import './styles/typeography.css'
+import 'leaflet/dist/leaflet.css'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const SUB_DIRECTORY = ''
 
+const queryClient = new QueryClient()
+
+// Pages available
+const MapPage = lazy(() => import('../src/pages/map/pages/MapPage'))
+const AboutTheProjectPage = lazy(() => import('../src/pages/about-the-project/AboutTheProjectPage'))
+const ProjectPartnersPage = lazy(() => import('../src/pages/project-partners/ProjectPartnersPage'))
+const DataAccessPage = lazy(() => import('../src/pages/data-access/DataAccessPage'))
+const ContactUsPage = lazy(() => import('../src/pages/contact-us/ContactUsPage'))
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank"></a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    <QueryClientProvider client={queryClient}>
+      <MapLayerProvider>
+        <Router>
+          <Suspense fallback={<FetchingPanel />}>
+            <Routes>
+              <Route path={`${SUB_DIRECTORY}/`} element={<MapPage />} />
+              <Route path={`${SUB_DIRECTORY}/about-the-project`} element={<AboutTheProjectPage />} />
+              <Route path={`${SUB_DIRECTORY}/project-partners`} element={<ProjectPartnersPage />} />
+              <Route path={`${SUB_DIRECTORY}/data-access`} element={<DataAccessPage />} />
+              <Route path={`${SUB_DIRECTORY}/contact-us`} element={<ContactUsPage />} />
+            </Routes>
+          </Suspense>
+        </Router>
+      </MapLayerProvider>
+    </QueryClientProvider>
   )
 }
 

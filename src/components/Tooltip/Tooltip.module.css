@@ -1,0 +1,86 @@
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipBox {
+  position: absolute;
+  background: white;
+  color: var(--colorBlack2);
+  padding: 1rem;
+  left: 50%;
+  transform: translateX(-50px);
+  display: none;
+  z-index: 201;
+  white-space: normal;
+  width: 272px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.tooltipBox::after {
+  background-clip: content-box;
+  background-color: white;
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 19px;
+  transform: translateX(-19px);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.tooltipBox.top {
+  transform: translateX(-25px) translateY(calc(-100% - 9px - 3px));
+}
+
+.tooltipBox.bottom {
+  transform: translateX(-25px) translateY(28px);
+}
+
+.tooltipBox.top::after {
+  top: 100%;
+  transform: translateX(0) translateY(-50%) rotate(225deg);
+}
+
+.tooltipBox.bottom::after {
+  bottom: 100%;
+  transform: translateX(0) translateY(50%) rotate(45deg);
+}
+
+.tooltipBox.visible {
+  display: block;
+}
+
+.iconContainer {
+  display: flex;
+  margin-left: 5px;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon:hover {
+  color: var(--colorBlue8);
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title {
+  composes: ui14Medium from '../../styles/typeography.css';
+  margin-bottom: 4px;
+}
+
+.content {
+  composes: ui14Regular from '../../styles/typeography.css';
+}
+
+.dismiss {
+  color: var(--colorGray6);
+  cursor: pointer;
+}

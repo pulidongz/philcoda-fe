@@ -1,0 +1,13 @@
+.newtest {
+  display: 'flex';
+  height: '100%';
+  min-height: '400px';
+  background-color: '#319795';
+}
+
+.sidebar {
+  /* background-color: red; */
+}
+
+.mapContainer {
+}

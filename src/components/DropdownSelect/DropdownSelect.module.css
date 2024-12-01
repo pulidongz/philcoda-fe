@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.noTransition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.isError {
+  border-color: var(--colorRed) !important;
+}
+
+.customGroup {
+  border-bottom: 1px solid var(--colorGray2);
+}

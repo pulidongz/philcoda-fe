@@ -1,0 +1,143 @@
+/***************************************************/
+/* Checkboxes */
+.checkbox.checkRadioLabel,
+.radio.checkRadioLabel {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkRadioLabelInner,
+.checkRadioLabelInner {
+  composes: ui14Normal from '../../styles/typeography.css';
+  color: var(--colorBlack2);
+}
+
+.checkbox.isDisabled .checkRadioLabelInner,
+.radio.isDisabled .checkRadioLabelInner {
+  color: var(--colorGray6);
+}
+
+.checkbox .checkRadioInput,
+.radio .checkRadioInput {
+  background-color: white;
+  font: inherit;
+  height: 1rem;
+  width: 1rem;
+  appearance: none;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  border: 1px solid var(--colorGray4);
+  border-radius: 2px;
+  outline: 0;
+}
+
+.radio .checkRadioInput[type='radio'] {
+  border-radius: 50%;
+}
+
+.light.checkbox .checkRadioInput,
+.light.radio .checkRadioInput {
+  background-color: white;
+  font: inherit;
+  height: 1rem;
+  width: 1rem;
+  appearance: none;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  border: 1px solid var(--colorBlue8);
+  border-radius: 2px;
+  outline: 0;
+}
+
+.checkbox .checkRadioInput:checked,
+.radio .checkRadioInput:checked {
+  border-color: var(--colorGray10);
+  background-color: var(--colorGray10);
+}
+
+.primary.checkbox .checkRadioInput:checked,
+.primary.radio .checkRadioInput:checked {
+  border-color: var(--colorBlue8);
+  background-color: var(--colorBlue8);
+}
+
+.light.checkbox .checkRadioInput:checked,
+.light.radio .checkRadioInput:checked {
+  border-color: var(--colorBlue8);
+  background-color: white;
+}
+
+/* checkmark */
+.checkbox .checkRadioInput[type='checkbox']::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em white;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.radio .checkRadioInput[type='radio']::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em white;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.checkbox .checkRadioInput:checked::before,
+.radio .checkRadioInput:checked::before {
+  transform: scale(1);
+}
+
+.light.checkbox .checkRadioInput:checked::before,
+.light.radio .checkRadioInput:checked::before {
+  box-shadow: inset 1em 1em var(--colorBlue8);
+}
+
+.checkbox .checkRadioInput:focus,
+.radio .checkRadioInput:focus {
+  box-shadow: 0 0 0 4px var(--colorBlackFade);
+  outline: 0 none;
+}
+
+.primary.checkbox .checkRadioInput:focus,
+.primary.radio .checkRadioInput:focus {
+  box-shadow: 0 0 0 2px var(--colorBlueFade);
+  outline: 0 none;
+}
+
+.light.checkbox .checkRadioInput:focus,
+.light.radio .checkRadioInput:focus {
+  box-shadow: 0 0 0 2px var(--colorBlueFade);
+  outline: 0 none;
+}
+
+.checkbox .checkRadioInput:disabled,
+.radio .checkRadioInput:disabled {
+  border-color: var(--colorGray4);
+  background-color: var(--colorGray2);
+}
+
+.checkbox .checkRadioInput:checked:disabled,
+.radio .checkRadioInput:checked:disabled {
+  border-color: var(--colorGray4);
+  background-color: var(--colorGray4);
+}
+
+.disabledCheckRadioLabel {
+  color: var(--colorGray6);
+  cursor: not-allowed;
+}

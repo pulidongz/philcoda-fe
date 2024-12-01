@@ -1,0 +1,154 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.1875rem;
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  white-space: nowrap;
+}
+
+.badge.hasMargin {
+  margin: 0 0.5rem 0.375rem 0;
+}
+
+/* Tinted badges */
+.badge.tinted.gray {
+  background-color: var(--colorGray2);
+  color: var(--colorGray10);
+}
+
+.badge.tinted.tan {
+  background-color: var(--colorTan3);
+  color: var(--colorTan11);
+}
+
+.badge.tinted.green {
+  background-color: var(--colorGreen2);
+  color: var(--colorGreen8);
+}
+
+.badge.tinted.blue {
+  background-color: var(--colorBlue2);
+  color: var(--colorBlue8);
+}
+
+.badge.tinted.red {
+  background-color: var(--colorRed2);
+  color: var(--colorRed8);
+}
+
+.badge.tinted.yellow {
+  background-color: var(--colorYellow2);
+  color: var(--colorYellow9);
+}
+
+.badge.tinted.purple {
+  background-color: var(--colorPurple2);
+  color: var(--colorPurple8);
+}
+
+.badge.round {
+  border-radius: 10px;
+}
+
+/* Solid/Round badges */
+.badge.solid.gray {
+  background-color: var(--colorGray8);
+  color: white;
+}
+
+.badge.solid.tan {
+  background-color: var(--colorTan8);
+  color: white;
+}
+
+.badge.solid.green {
+  background-color: var(--colorGreen7);
+  color: white;
+}
+
+.badge.solid.blue {
+  background-color: var(--colorBlue7);
+  color: white;
+}
+
+.badge.solid.red {
+  background-color: var(--colorRed7);
+  color: white;
+}
+
+.badge.solid.yellow {
+  background-color: var(--colorYellow7);
+  color: white;
+}
+
+.badge.solid.purple {
+  background-color: var(--colorPurple7);
+  color: white;
+}
+
+/* Round badges */
+.badge.round.gray {
+  background-color: var(--colorGray9);
+  color: white;
+}
+
+.badge.round.tan {
+  background-color: var(--colorTan9);
+  color: white;
+}
+
+.badge.round.green {
+  background-color: var(--colorGreen8);
+  color: white;
+}
+
+.badge.round.blue {
+  background-color: var(--colorBlue8);
+  color: white;
+}
+
+.badge.round.red {
+  background-color: var(--colorRed8);
+  color: white;
+}
+
+.badge.round.yellow {
+  background-color: var(--colorYellow8);
+  color: white;
+}
+
+.badge.round.purple {
+  background-color: var(--colorPurple8);
+  color: white;
+}
+
+.badge.round.tan {
+  background-color: var(--colorTan9);
+  color: var(--colorTan2);
+}
+
+.badgeLabel {
+  display: inline;
+}
+
+.badgeLabel.hasLeadingIcon {
+  margin-left: 0.375rem;
+}
+
+.solid,
+.tinted {
+  composes: ui12Medium from '../../styles/typeography.css';
+}
+
+.round {
+  composes: ui11SemiBold from '../../styles/typeography.css';
+}
+
+.dismiss {
+  margin-left: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.tileListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--colorGray2);
+  border-radius: 4px;
+  padding: 22px 32px 22px 16px;
+}
+
+.checkbox {
+  composes: ui14SemiBold from '../../styles/typeography.css';
+  color: var(--colorBlack2);
+}
+
+.disabled {
+  pointer-events: none;
+  /* color: var(--colorGray4); */
+  opacity: 0.5;
+}

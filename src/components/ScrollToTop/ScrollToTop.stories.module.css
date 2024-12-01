@@ -1,0 +1,26 @@
+.exampleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heading {
+  composes: ui20SemiBold from '../../styles/typeography.css';
+  margin-bottom: 32px;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.iconWrapper + .iconWrapper {
+  margin-top: 32px;
+}
+
+.iconName {
+  margin-left: 16px;
+}

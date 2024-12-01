@@ -1,0 +1,25 @@
+.exampleGroup {
+  max-width: 500px;
+  margin-right: auto;
+}
+
+.horizontalGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.divider {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--colorGray2);
+}
+
+.hidden {
+  display: none;
+}
+
+.noMargin {
+  margin: 0;
+}

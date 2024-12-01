@@ -1,0 +1,7 @@
+.colorSeparator + .colorSeparator {
+  margin-top: 20px;
+}
+
+.colorSeparator button + button {
+  margin-left: 10px;
+}

@@ -1,0 +1,21 @@
+.fieldset {
+  border: 1px solid var(--colorGray2);
+  padding: 24px 24px 8px 24px;
+  margin: 24px 0 24px 0;
+  border-radius: 8px;
+}
+
+.fieldsetTitle {
+  composes: ui14SemiBold from '../../styles/typeography.css';
+  margin-bottom: 16px;
+}
+
+.fieldsetSubtitle {
+  composes: ui12Regular from '../../styles/typeography.css';
+  margin-top: 4px;
+  color: #7f7f7f;
+}
+
+.fieldset + .fieldset {
+  margin-top: 0;
+}

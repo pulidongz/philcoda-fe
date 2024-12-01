@@ -1,0 +1,16 @@
+.fieldsetRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* space between children */
+.fieldsetRow > * + * {
+  margin-left: 24px;
+}
+
+.spacer {
+  flex-grow: 1;
+  margin-left: 24px;
+}

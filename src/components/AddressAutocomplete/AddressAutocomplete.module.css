@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.inputContainer {
+  /* margin-bottom: 16px; */
+}
+
+.manualBtn {
+  align-self: flex-end;
+  color: var(--colorGray6) !important;
+}
+
+.labelAddress {
+  composes: ui12Medium from '../../styles/typeography.css';
+  color: var(--colorGray8);
+}
+
+.hideSubmitButton {
+  display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

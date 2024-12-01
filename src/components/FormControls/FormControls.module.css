@@ -1,0 +1,259 @@
+/* Datum elements are for forms that have a view or non-edit mode */
+
+.datumGroup {
+  margin-bottom: 1.5rem;
+}
+
+.datumContainer {
+  margin-bottom: 0.75rem;
+}
+
+.datumTitle {
+  color: var(--colorFieldTitle);
+}
+
+.datumBadge {
+  margin: 0.5rem;
+}
+
+.datumValue {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.datumValue.isHeading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/***************************************************/
+.formErrorContainer {
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--colorRed8);
+  background-color: var(--colorRedFade);
+  border-radius: 3px;
+  text-align: left;
+}
+
+.fieldOuter {
+  position: relative;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.fieldOuter.hasTitle {
+  margin-bottom: 1rem;
+}
+
+.fieldInner {
+  position: relative;
+  display: flex;
+}
+
+.fieldError {
+  composes: ui11Medium from '../../styles/typeography.css';
+  text-align: right;
+  color: var(--colorRed8);
+}
+
+.fieldTitle {
+  composes: ui12Medium from '../../styles/typeography.css';
+
+  padding-top: 0;
+  padding-bottom: 4px;
+  text-align: left;
+  color: var(--colorFieldTitle);
+  min-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+/* .fieldTitle.left {
+  justify-content: flex-start;
+} */
+.fieldTitle.center {
+  justify-content: center;
+}
+.fieldTitle.right {
+  justify-content: flex-end;
+}
+.fieldTitle.isRow {
+  flex-direction: row;
+}
+
+/* no longer used
+.isUpdated .fieldTitle {
+  color: var(--colorGreen);
+}
+*/
+
+.titleDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.fieldTitleInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.fieldTitleHint {
+  composes: ui11Medium from '../../styles/typeography.css';
+  color: var(--colorGray6);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: inherit;
+}
+
+.fieldInput {
+  composes: ui14Regular from '../../styles/typeography.css';
+  background-color: white;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0; /* For Firefox - https://stackoverflow.com/questions/34764641/input-controls-overflowing-flex-container-in-firefox */
+  max-height: 32px;
+  padding: 6px 12px;
+
+  border-radius: 2px;
+  border: solid var(--colorBorderDefault) 1px;
+  color: var(--colorTextDefault);
+  box-sizing: border-box;
+
+  transition-property: opacity, color, background-color, border-color, box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.fieldInput.textArea {
+  max-height: none;
+}
+
+@media (--viewportTabletMin) {
+  .fieldInput {
+    font-size: inherit;
+  }
+}
+
+.fieldInput:focus,
+.isActive .fieldInput {
+  border-color: var(--colorBlack2);
+  box-shadow: 0 0 0 4px var(--colorBlackFade);
+  outline: 0 none;
+}
+
+.primary .fieldInput:focus,
+.primary.isActive .fieldInput {
+  border-color: var(--colorBlue);
+  box-shadow: 0 0 0 4px var(--colorBlueFade);
+  outline: 0 none;
+}
+
+.secondary .fieldInput {
+  font-weight: 500;
+  background-color: var(--colorGray2);
+  color: var(--colorBlack2);
+  border-color: transparent;
+}
+
+.secondary .fieldInput:focus,
+.secondary.isActive .fieldInput {
+  border-color: var(--colorBlack);
+  box-shadow: 0 0 0 4px var(--colorBlackFade);
+  outline: 0 none;
+}
+
+.fieldInput::placeholder {
+  color: var(--colorInputPlaceholder);
+}
+
+.fieldInput.isDisabled,
+.fieldInput[disabled] {
+  color: var(--colorGray9);
+  background-color: var(--colorGray1);
+  border-color: var(--colorGray4);
+  opacity: 1;
+}
+
+.fieldInput[type='search'] {
+  -webkit-appearance: none;
+}
+
+/*
+ * no longer used
+.isUpdated .fieldInput {
+  border-color: var(--colorGreen);
+}
+
+.isUpdated .fieldInput:focus,
+.isUpdated.isActive .fieldInput {
+  box-shadow: 0 0 0 4px var(--colorGreenFade);
+}
+*/
+
+.isError .fieldInput {
+  border-color: var(--colorRed);
+}
+
+.isError .fieldInput:focus,
+.isError.isActive .fieldInput {
+  box-shadow: 0 0 0 4px var(--colorRedFade);
+}
+
+.hasLeftIcon .fieldInput {
+  padding-left: calc(10px + 16px + 10px);
+}
+
+.hasRightIcon .fieldInput {
+  padding-right: calc(10px + 16px + 10px);
+}
+
+.iconLeft {
+  color: var(--colorGray4);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconRight {
+  color: var(--colorGray4);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fieldInput[disabled] .iconLeft,
+.fieldInput[disabled] .iconRight {
+  color: var(--colorGray6);
+}
+
+.fieldDescription {
+  composes: ui12Regular from '../../styles/typeography.css';
+  color: var(--colorGray7);
+}
+
+.positionTop {
+  margin-bottom: 4px;
+}
+
+.positionBottom {
+  margin-top: 4px;
+}

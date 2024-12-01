@@ -1,0 +1,706 @@
+.button {
+  /* Default */
+  --colorButtonDefaultText: var(--colorBlack2);
+  --colorButtonDefaultBackground: var(--colorGray2);
+  --colorButtonDefaultBorder: transparent;
+  --colorButtonDefaultHoverText: white;
+  --colorButtonDefaultHoverBackground: var(--colorGray11);
+  --colorButtonDefaultActiveText: white;
+  --colorButtonDefaultActiveBackground: var(--colorGray12);
+  --colorButtonDefaultDisabledText: var(--colorGray4);
+  --colorButtonDefaultDisabledBackground: var(--colorGray1);
+  --colorButtonDefaultSubmittingText: var(--colorGray12);
+  --colorButtonDefaultSubmittingBackground: var(--colorGray1);
+
+  /* Brand / Tan */
+  --colorButtonBrandText: var(--colorBlack2);
+  --colorButtonBrandBackground: var(--colorTan2);
+  --colorButtonBrandBorder: transparent;
+  --colorButtonBrandHoverText: white;
+  --colorButtonBrandHoverBackground: var(--colorTan11);
+  --colorButtonBrandActiveText: white;
+  --colorButtonBrandActiveBackground: var(--colorTan12);
+  --colorButtonBrandDisabledText: var(--colorTan4);
+  --colorButtonBrandDisabledBackground: var(--colorTan1);
+  --colorButtonBrandSubmittingText: var(--colorTan12);
+  --colorButtonBrandSubmittingBackground: var(--colorTan1);
+
+  /* Transparent */
+  --colorButtonTransparentText: var(--colorGray10);
+  --colorButtonTransparentBackground: transparent;
+  --colorButtonTransparentHoverText: white;
+  --colorButtonTransparentHoverBackground: var(--colorGray11);
+  --colorButtonTransparentActiveText: white;
+  --colorButtonTransparentActiveBackground: var(--colorGray12);
+  --colorButtonTransparentDisabledText: var(--colorGray4);
+  --colorButtonTransparentDisabledBackground: var(--colorGray1);
+  --colorButtonTransparentSubmittingText: var(--colorGray11);
+  --colorButtonTransparentSubmittingBackground: var(--colorGray1);
+
+  /* Primary */
+  --colorButtonPrimaryText: white;
+  --colorButtonPrimaryBackground: var(--colorBlue8);
+  --colorButtonPrimaryHoverText: white;
+  --colorButtonPrimaryHoverBackground: var(--colorBlue9);
+  --colorButtonPrimaryActiveText: white;
+  --colorButtonPrimaryActiveBackground: var(--colorBlue10);
+  --colorButtonPrimaryDisabledText: var(--colorBlue3);
+  --colorButtonPrimaryDisabledBackground: var(--colorBlue5);
+  --colorButtonPrimarySubmittingText: white;
+  --colorButtonPrimarySubmittingBackground: var(--colorBlue6);
+
+  /* Link */
+  --colorButtonLinkText: var(--colorBlue8);
+  --colorButtonLinkBackground: white;
+  --colorButtonLinkHoverText: var(--colorBlue9);
+  --colorButtonLinkHoverBackground: white;
+  --colorButtonLinkActiveText: var(--colorBlue9);
+  --colorButtonLinkActiveBackground: var(--colorBlue1);
+  --colorButtonLinkDisabledText: var(--colorGray4);
+  --colorButtonLinkDisabledBackground: white;
+  --colorButtonLinkSubmittingText: var(--colorBlue9);
+  --colorButtonLinkSubmittingBackground: white;
+
+  /* Positive */
+  --colorButtonPositiveText: white;
+  --colorButtonPositiveBackground: var(--colorGreen8);
+  --colorButtonPositiveHoverText: white;
+  --colorButtonPositiveHoverBackground: var(--colorGreen9);
+  --colorButtonPositiveActiveText: white;
+  --colorButtonPositiveActiveBackground: var(--colorGreen10);
+  --colorButtonPositiveDisabledText: var(--colorGreen3);
+  --colorButtonPositiveDisabledBackground: var(--colorGreen6);
+  --colorButtonPositiveSubmittingText: white;
+  --colorButtonPositiveSubmittingBackground: var(--colorGreen6);
+
+  /* Reverse */
+  --colorButtonReverseText: var(--colorBlack2);
+  --colorButtonReverseBackground: rgba(255, 255, 255, 0.97);
+  --colorButtonReverseHoverText: var(--colorBlack2);
+  --colorButtonReverseHoverBackground: rgba(255, 255, 255, 1);
+  --colorButtonReverseActiveText: var(--colorBlack2);
+  --colorButtonReverseActiveBackground: rgba(255, 255, 255, 1);
+  --colorButtonReverseDisabledText: var(--colorGray5);
+  --colorButtonReverseDisabledBackground: rgba(255, 255, 255, 0.7);
+  --colorButtonReverseSubmittingText: var(--colorBlack2);
+  --colorButtonReverseSubmittingBackground: rgba(255, 255, 255, 0.7);
+
+  /* Dark */
+  --colorButtonDarkText: white;
+  --colorButtonDarkBackground: var(--colorGray10);
+  --colorButtonDarkHoverText: white;
+  --colorButtonDarkHoverBackground: var(--colorGray11);
+  --colorButtonDarkActiveText: white;
+  --colorButtonDarkActiveBackground: var(--colorGray12);
+  --colorButtonDarkDisabledText: var(--colorGray5);
+  --colorButtonDarkDisabledBackground: var(--colorGray8);
+  --colorButtonDarkSubmittingText: white;
+  --colorButtonDarkSubmittingBackground: var(--colorGray8);
+
+  /* Light */
+  --colorButtonLightText: var(--colorBlack2);
+  --colorButtonLightBackground: white;
+  --colorButtonLightHoverText: var(--colorBlack2);
+  --colorButtonLightHoverBackground: var(--colorGray1);
+  --colorButtonLightActiveText: var(--colorBlack2);
+  --colorButtonLightActiveBackground: var(--colorGray2);
+  --colorButtonLightDisabledText: var(--colorGray5);
+  --colorButtonLightDisabledBackground: white;
+  --colorButtonLightSubmittingText: var(--colorBlack2);
+  --colorButtonLightSubmittingBackground: white;
+
+  /* Danger */
+  --colorButtonDangerText: white;
+  --colorButtonDangerBackground: var(--colorRed8);
+  --colorButtonDangerHoverBackground: var(--sh_colorGray5);
+  --colorButtonDangerHoverText: white;
+  --colorButtonDangerHoverBackground: var(--colorRed9);
+  --colorButtonDangerActiveText: white;
+  --colorButtonDangerActiveBackground: var(--colorRed10);
+  --colorButtonDangerDisabledText: var(--colorRed4);
+  --colorButtonDangerDisabledBackground: var(--colorRed6);
+  --colorButtonDangerSubmittingText: white;
+  --colorButtonDangerSubmittingBackground: var(--colorRed6);
+
+  /* Warning */
+  --colorButtonWarningText: white;
+  --colorButtonWarningBackground: var(--colorYellow7);
+  --colorButtonWarningHoverBackground: var(--sh_colorGray5);
+  --colorButtonWarningHoverText: white;
+  --colorButtonWarningHoverBackground: var(--colorYellow8);
+  --colorButtonWarningActiveText: white;
+  --colorButtonWarningActiveBackground: var(--colorYellow9);
+  --colorButtonWarningDisabledText: var(--sh_colorGray4);
+  --colorButtonWarningDisabledBackground: var(--colorYellow6);
+  --colorButtonWarningSubmittingText: white;
+  --colorButtonWarningSubmittingBackground: var(--colorYellow6);
+
+  /* Danger Secondary */
+  --colorButtonDangerSecondaryText: var(--colorRed8);
+  --colorButtonDangerSecondaryBackground: var(--sh_colorGray2);
+  --colorButtonDangerSecondaryHoverText: white;
+  --colorButtonDangerSecondaryHoverBackground: var(--colorRed9);
+  --colorButtonDangerSecondaryActiveText: white;
+  --colorButtonDangerSecondaryActiveBackground: var(--colorRed10);
+  --colorButtonDangerSecondaryDisabledText: var(--sh_colorGray4);
+  --colorButtonDangerSecondaryDisabledBackground: var(--sh_colorGray1);
+  --colorButtonDangerSecondarySubmittingText: white;
+  --colorButtonDangerSecondarySubmittingBackground: var(--colorRed6);
+
+  /* Positive Secondary */
+  --colorButtonPositiveSecondaryText: var(--colorGreen8);
+  --colorButtonPositiveSecondaryBackground: var(--sh_colorGray2);
+  --colorButtonPositiveSecondaryHoverText: white;
+  --colorButtonPositiveSecondaryHoverBackground: var(--colorGreen9);
+  --colorButtonPositiveSecondaryActiveText: white;
+  --colorButtonPositiveSecondaryActiveBackground: var(--colorGreen10);
+  --colorButtonPositiveSecondaryDisabledText: var(--sh_colorGray4);
+  --colorButtonPositiveSecondaryDisabledBackground: var(--sh_colorGray1);
+  --colorButtonPositiveSecondarySubmittingText: white;
+  --colorButtonPositiveSecondarySubmittingBackground: var(--colorGreen6);
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 32px; /* Overidden by size */
+  padding: 6px 16px; /* Overidden by size */
+
+  border: 1px solid var(--colorButtonDefaultBorder); /* Overidden by kind */
+  border-radius: 2px; /* Overidden by isJoinedLeft and isJoinedRight */
+  box-shadow: none;
+
+  color: var(--colorButtonDefaultText);
+  background-color: var(--colorButtonDefaultBackground);
+
+  composes: ui14Medium from '../../styles/typeography.css';
+
+  text-align: center;
+  text-decoration: none;
+
+  transition-property: opacity, color, background-color, border-color, box-shadow, transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  /* Ensures anchor tags remain default text color */
+  color: var(--colorButtonDefaultHoverText);
+  background-color: var(--colorButtonDefaultHoverBackground);
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px var(--colorInputFocusOutline);
+  outline: 0 none;
+}
+
+.button:disabled,
+.button.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: var(--colorButtonDefaultDisabledText);
+  background-color: var(--colorButtonDefaultDisabledBackground);
+}
+
+.button:active,
+.button.active {
+  color: var(--colorButtonDefaultActiveText);
+  background-color: var(--colorButtonDefaultActiveBackground);
+}
+
+.button.isSubmitting {
+  pointer-events: none;
+  cursor: default;
+  color: var(--colorButtonDefaultSubmittingText);
+  background-color: var(--colorButtonDefaultSubmittingBackground);
+}
+
+/* Size */
+
+.button.mini {
+  height: 1.75rem;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+.button.large {
+  height: 2.25rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+}
+
+/* Kind */
+
+/* Brand */
+.button.brand {
+  border: none;
+  color: var(--colorButtonBrandText);
+  background-color: var(--colorButtonBrandBackground);
+}
+
+.button.brand:hover {
+  color: var(--colorButtonBrandHoverText);
+  background-color: var(--colorButtonBrandHoverBackground);
+}
+
+.button.brand:active,
+.button.brand.active {
+  color: var(--colorButtonBrandActiveText);
+  background-color: var(--colorButtonBrandActiveBackground);
+}
+
+.button.brand:disabled,
+.button.brand.disabled {
+  color: var(--colorButtonBrandDisabledText);
+  background-color: var(--colorButtonBrandDisabledBackground);
+}
+
+.button.brand.isSubmitting {
+  color: var(--colorButtonBrandSubmittingText);
+  background-color: var(--colorButtonBrandSubmittingBackground);
+}
+
+/* Dark */
+.button.dark {
+  border: none;
+  color: var(--colorButtonDarkText);
+  background-color: var(--colorButtonDarkBackground);
+}
+
+.button.dark:hover {
+  color: var(--colorButtonDarkHoverText);
+  background-color: var(--colorButtonDarkHoverBackground);
+}
+
+.button.dark:active,
+.button.dark.active {
+  color: var(--colorButtonDarkActiveText);
+  background-color: var(--colorButtonDarkActiveBackground);
+}
+
+.button.dark:disabled,
+.button.dark.disabled {
+  color: var(--colorButtonDarkDisabledText);
+  background-color: var(--colorButtonDarkDisabledBackground);
+}
+
+.button.dark.isSubmitting {
+  color: var(--colorButtonDarkSubmittingText);
+  background-color: var(--colorButtonDarkSubmittingBackground);
+}
+
+/* Transparent */
+.button.transparent {
+  border: none;
+  padding: 0 8px;
+  color: var(--colorButtonTransparentText);
+  background-color: var(--colorButtonTransparentBackground);
+}
+
+.button.transparent:hover {
+  color: var(--colorButtonTransparentHoverText);
+  background-color: var(--colorButtonTransparentHoverBackground);
+}
+
+.button.transparent:active,
+.button.transparent.active {
+  color: var(--colorButtonTransparentActiveText);
+  background-color: var(--colorButtonTransparentActiveBackground);
+}
+
+.button.transparent:disabled,
+.button.transparent.disabled {
+  color: var(--colorButtonTransparentDisabledText);
+  background-color: var(--colorButtonTransparentDisabledBackground);
+}
+
+.button.transparent.isSubmitting {
+  color: var(--colorButtonTransparentSubmittingText);
+  background-color: var(--colorButtonTransparentSubmittingBackground);
+}
+
+/* Primary */
+.button.primary {
+  border: none;
+  color: var(--colorButtonPrimaryText);
+  background-color: var(--colorButtonPrimaryBackground);
+}
+
+.button.primary:hover {
+  color: var(--colorButtonPrimaryHoverText);
+  background-color: var(--colorButtonPrimaryHoverBackground);
+}
+
+.button.primary:active,
+.button.primary.active {
+  color: var(--colorButtonPrimaryActiveText);
+  background-color: var(--colorButtonPrimaryActiveBackground);
+}
+
+.button.primary:disabled,
+.button.primary.disabled {
+  color: var(--colorButtonPrimaryDisabledText);
+  background-color: var(--colorButtonPrimaryDisabledBackground);
+}
+
+.button.primary.isSubmitting {
+  color: var(--colorButtonPrimarySubmittingText);
+  background-color: var(--colorButtonPrimarySubmittingBackground);
+}
+
+/* Link */
+.button.link {
+  border: none;
+  color: var(--colorButtonLinkText);
+  background-color: var(--colorButtonLinkBackground);
+}
+
+.button.link:hover {
+  color: var(--colorButtonLinkHoverText);
+  background-color: var(--colorButtonLinkHoverBackground);
+  text-decoration: underline;
+}
+
+.button.link:active,
+.button.link.active {
+  color: var(--colorButtonLinkActiveText);
+  background-color: var(--colorButtonLinkActiveBackground);
+  text-decoration: underline;
+}
+
+.button.link:disabled,
+.button.link.disabled {
+  color: var(--colorButtonLinkDisabledText);
+  background-color: var(--colorButtonLinkDisabledBackground);
+  text-decoration: none;
+}
+
+.button.link.isSubmitting {
+  color: var(--colorButtonLinkSubmittingText);
+  background-color: var(--colorButtonLinkSubmittingBackground);
+  text-decoration: none;
+}
+
+/* Positive */
+.button.positive {
+  border: none;
+  color: var(--colorButtonPositiveText);
+  background-color: var(--colorButtonPositiveBackground);
+}
+
+.button.positive:hover {
+  color: var(--colorButtonPositiveHoverText);
+  background-color: var(--colorButtonPositiveHoverBackground);
+}
+
+.button.positive:disabled,
+.button.positive.disabled {
+  color: var(--colorButtonPositiveDisabledText);
+  background-color: var(--colorButtonPositiveDisabledBackground);
+}
+
+.button.button.positive:active,
+.button.button.positive.active {
+  color: var(--colorButtonPositiveActiveText);
+  background-color: var(--colorButtonPositiveActiveBackground);
+}
+
+.button.positive.isSubmitting {
+  color: var(--colorButtonPositiveSubmittingText);
+  background-color: var(--colorButtonPositiveSubmittingBackground);
+}
+
+/* Reverse */
+.button.reverse {
+  border: none;
+  color: var(--colorButtonReverseText);
+  background-color: var(--colorButtonReverseBackground);
+  mix-blend-mode: lighten;
+}
+
+.button.reverse:hover {
+  color: var(--colorButtonReverseHoverText);
+  background-color: var(--colorButtonReverseHoverBackground);
+}
+
+.button.reverse:active,
+.button.reverse.active {
+  color: var(--colorButtonReverseActiveText);
+  background-color: var(--colorButtonReverseActiveBackground);
+}
+
+.button.reverse:disabled,
+.button.reverse.disabled {
+  color: var(--colorButtonReverseDisabledText);
+  background-color: var(--colorButtonReverseDisabledBackground);
+}
+
+.button.reverse.isSubmitting {
+  color: var(--colorButtonReverseSubmittingText);
+  background-color: var(--colorButtonReverseSubmittingBackground);
+}
+
+/* Light */
+.button.light {
+  border: 1px solid var(--colorButtonLightText);
+  color: var(--colorButtonLightText);
+  background-color: var(--colorButtonLightBackground);
+}
+
+.button.light:hover {
+  color: var(--colorButtonLightHoverText);
+  background-color: var(--colorButtonLightHoverBackground);
+}
+
+.button.light:active,
+.button.light.active {
+  color: var(--colorButtonLightActiveText);
+  background-color: var(--colorButtonLightActiveBackground);
+}
+
+.button.light:disabled,
+.button.light.disabled {
+  color: var(--colorButtonLightDisabledText);
+  background-color: var(--colorButtonLightDisabledBackground);
+  border-color: var(--colorButtonLightDisabledText);
+}
+
+.button.light.isSubmitting {
+  color: var(--colorButtonLightSubmittingText);
+  background-color: var(--colorButtonLightSubmittingBackground);
+}
+
+/* Danger */
+.button.danger {
+  border: transparent;
+  color: var(--colorButtonDangerText);
+  background-color: var(--colorButtonDangerBackground);
+}
+
+.button.danger:hover {
+  color: var(--colorButtonDangerHoverText);
+  background-color: var(--colorButtonDangerHoverBackground);
+}
+
+.button.danger:disabled,
+.button.danger.disabled {
+  color: var(--colorButtonDangerDisabledText);
+  background-color: var(--colorButtonDangerDisabledBackground);
+}
+
+.button.button.danger:active,
+.button.button.danger.active {
+  color: var(--colorButtonDangerActiveText);
+  background-color: var(--colorButtonDangerActiveBackground);
+}
+
+.button.danger.isSubmitting {
+  color: var(--colorButtonDangerSubmittingText);
+  background-color: var(--colorButtonDangerSubmittingBackground);
+}
+
+/* Warning */
+.button.warning {
+  border: transparent;
+  color: var(--colorButtonWarningText);
+  background-color: var(--colorButtonWarningBackground);
+}
+
+.button.warning:hover {
+  color: var(--colorButtonWarningHoverText);
+  background-color: var(--colorButtonWarningHoverBackground);
+}
+
+.button.warning:disabled,
+.button.warning.disabled {
+  color: var(--colorButtonWarningDisabledText);
+  background-color: var(--colorButtonWarningDisabledBackground);
+}
+
+.button.button.warning:active,
+.button.button.warning.active {
+  color: var(--colorButtonWarningActiveText);
+  background-color: var(--colorButtonWarningActiveBackground);
+}
+
+.button.warning.isSubmitting {
+  color: var(--colorButtonWarningSubmittingText);
+  background-color: var(--colorButtonWarningSubmittingBackground);
+}
+
+/* Danger Secondary */
+.button.dangerSecondary {
+  border: 1px solid transparent;
+  color: var(--colorButtonDangerSecondaryText);
+  background-color: var(--colorButtonDangerSecondaryBackground);
+}
+
+.button.dangerSecondary:hover {
+  color: var(--colorButtonDangerSecondaryHoverText);
+  background-color: var(--colorButtonDangerSecondaryHoverBackground);
+}
+
+.button.dangerSecondary:disabled,
+.button.dangerSecondary.disabled {
+  color: var(--colorButtonDangerSecondaryDisabledText);
+  background-color: var(--colorButtonDangerSecondaryDisabledBackground);
+}
+
+.button.button.dangerSecondary:active,
+.button.button.dangerSecondary.active {
+  color: var(--colorButtonDangerSecondaryActiveText);
+  background-color: var(--colorButtonDangerSecondaryActiveBackground);
+}
+
+.button.button.dangerSecondary.isSubmitting {
+  color: var(--colorButtonDangerSecondarySubmittingText);
+  background-color: var(--colorButtonDangerSecondarySubmittingBackground);
+}
+
+/* Positive Secondary */
+.button.positiveSecondary {
+  border: 1px solid transparent;
+  color: var(--colorButtonPositiveSecondaryText);
+  background-color: var(--colorButtonPositiveSecondaryBackground);
+}
+
+.button.positiveSecondary:hover {
+  color: var(--colorButtonPositiveSecondaryHoverText);
+  background-color: var(--colorButtonPositiveSecondaryHoverBackground);
+}
+
+.button.positiveSecondary:disabled,
+.button.positiveSecondary.disabled {
+  color: var(--colorButtonPositiveSecondaryDisabledText);
+  background-color: var(--colorButtonPositiveSecondaryDisabledBackground);
+}
+
+.button.button.positiveSecondary:active,
+.button.button.positiveSecondary.active {
+  color: var(--colorButtonPositiveSecondaryActiveText);
+  background-color: var(--colorButtonPositiveSecondaryActiveBackground);
+}
+
+.button.button.positiveSecondary.isSubmitting {
+  color: var(--colorButtonPositiveSecondarySubmittingText);
+  background-color: var(--colorButtonPositiveSecondarySubmittingBackground);
+}
+
+/* Box model / flexbox / shape */
+
+.button.isBlock {
+  width: 100%;
+}
+
+.button.isElastic {
+  flex-grow: 1;
+}
+
+.button.isJoinedLeft {
+  border-radius: 0 2px 2px 0;
+}
+
+.button.isJoinedRight {
+  border-radius: 2px 0 0 2px;
+}
+
+/* Children */
+
+.buttonInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  display: inline-block;
+}
+
+/* Icons */
+
+.button.hasIconLeft {
+  padding-left: 12px;
+}
+
+.button.hasIconRight {
+  padding-right: 12px;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0 0.35rem;
+}
+
+.hasIconLeft .icon {
+  margin-left: 0;
+}
+
+.hasIconRight .icon {
+  margin-right: 0;
+}
+
+.button.isIconOnly {
+  padding: 8px 12px;
+}
+
+.isIconOnly .icon {
+  margin: 0;
+}
+
+/* Interaction */
+
+.hide {
+  visibility: hidden;
+}
+
+.hasSubmittingText .hide {
+  display: none;
+}
+
+.progressSpinner {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+}
+
+.hasSubmittingText .progressSpinner {
+  position: static;
+  margin-left: 10px;
+}
+
+/* Button Group */
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonGroup > a,
+.buttonGroup > button {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.buttonGroup > a:first-child,
+.buttonGroup > button:first-child {
+  margin-left: 0;
+}
+
+.buttonGroup > a:last-child,
+.buttonGroup > button:last-child {
+  margin-right: 0;
+}
+
+.buttonGroup.alignRight {
+  justify-content: flex-end;
+}

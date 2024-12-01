@@ -1,0 +1,29 @@
+.summaryContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px;
+}
+
+.title,
+.value {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title {
+  composes: ui14SemiBold from '../../../../styles/typeography.css';
+  color: var(--colorBlack2);
+}
+
+.value {
+  composes: ui14Regular from '../../../../styles/typeography.css';
+  color: var(--colorGray8);
+  overflow-x: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}

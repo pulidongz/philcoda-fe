@@ -1,0 +1,34 @@
+.heading {
+  composes: ui14SemiBold from '../../styles/typeography.css';
+}
+
+.iconRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 16px;
+}
+
+.iconWrapper + .iconWrapper {
+  margin-left: 16px;
+}
+
+.iconName {
+  composes: ui10Regular from '../../styles/typeography.css';
+  color: var(--colorGray8);
+}
+
+.iconSection + .iconSection {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--colorGray2);
+}

@@ -1,0 +1,75 @@
+.switchContainer {
+  display: flex;
+}
+
+.switchWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.switchLabel {
+  composes: ui14Regular from '../../styles/typeography.css';
+  margin-right: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.isDisabled .switchLabel {
+  color: var(--colorGray5);
+}
+
+.switchContainer input[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switchContainer .switch {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 32px;
+  height: 18px;
+  background: var(--colorGray3);
+  display: block;
+  border-radius: 18px;
+  position: relative;
+}
+
+.switchContainer .switch:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.switchContainer input:checked + .switch {
+  background: var(--colorGreen7);
+}
+
+.switchContainer input:checked + .switch:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switchContainer .switch:active:after {
+  width: 20px;
+}
+
+.switchContainer.isDisabled .switch {
+  background: var(--colorGray3);
+  cursor: default;
+  pointer-events: none;
+}
+
+.switchContainer.isDisabled input:checked + .switch {
+  background: var(--colorGreen4);
+}
